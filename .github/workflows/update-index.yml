@@ -34,5 +34,5 @@ jobs:
           WEAVIATE_API_KEY: ${{ secrets.WEAVIATE_API_KEY }}
           WEAVIATE_INDEX_NAME: ${{ secrets.WEAVIATE_INDEX_NAME }}
           RECORD_MANAGER_DB_URL: ${{ secrets.RECORD_MANAGER_DB_URL }}
-          VERCEL_URL: ${{ secrets.VERCEL_URL }}
+          VERCEL_URL: ${{ vars.VERCEL_URL }}
           FORCE_UPDATE: ${{ github.event.inputs.force_update }}
