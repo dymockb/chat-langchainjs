@@ -1,4 +1,2 @@
-const apiBasePath = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : `http://localhost:3001`;
+const apiBasePath = "https://chat-langchainjs-frontend-7j5u-9eezsav49-dymock-bs-projects.vercel.app"
 export const apiBaseUrl = `${apiBasePath}/api`;
