@@ -215,7 +215,7 @@ export function ChatWindow(props: { conversationId: string }) {
           mb={1}
           color={"white"}
         >
-          Daphne's Langchain Chatbot 🦜🔗
+          Daphne&apos;s Langchain Chatbot 🦜🔗
         </Heading>
         {messages.length > 0 ? (
           <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
@@ -229,7 +229,7 @@ export function ChatWindow(props: { conversationId: string }) {
             marginTop={"10px"}
             textAlign={"center"}
           >
-            Ask me anything about LangChain&apos;s{" "}
+            {process.env.OPENAI_API_KEY}Ask me anything about LangChain&apos;s{" "}
             <Link href="https://js.langchain.com/" color={"blue.200"}>
               TypeScript documentation!
             </Link>
