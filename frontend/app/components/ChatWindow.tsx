@@ -222,6 +222,9 @@ export function ChatWindow(props: { conversationId: string }) {
             Deployed by Dymock B
           </Heading>
         ) : (
+          <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
+            Deployed by Dymock B
+          </Heading>
           <Heading
             fontSize="xl"
             fontWeight={"normal"}
@@ -229,7 +232,7 @@ export function ChatWindow(props: { conversationId: string }) {
             marginTop={"10px"}
             textAlign={"center"}
           >
-            {process.env.OPENAI_API_KEY}Ask me anything about LangChain&apos;s{" "}
+            Ask me anything about LangChain&apos;s{" "}
             <Link href="https://js.langchain.com/" color={"blue.200"}>
               TypeScript documentation!
             </Link>
