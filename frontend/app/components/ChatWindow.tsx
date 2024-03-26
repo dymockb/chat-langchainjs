@@ -229,11 +229,10 @@ export function ChatWindow(props: { conversationId: string }) {
             marginTop={"10px"}
             textAlign={"center"}
           >
-            Ask me anything about LangChain&apos;s{" "}
+            Deployed by Dymock B - Ask me anything about LangChain&apos;s{" "}
             <Link href="https://js.langchain.com/" color={"blue.200"}>
               TypeScript documentation!
             </Link>
-            {" "}Deployed by Dymock B
           </Heading>
         )}
         <div className="text-white flex flex-wrap items-center mt-4">
