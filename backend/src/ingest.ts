@@ -79,12 +79,10 @@ async function ingestDocs() {
     chunkSize: 4000,
   });
   const docsTransformed = await textSplitter.splitDocuments([
-    ...smithDocs
+    ...smithDocs,
+    ...apiDocs,
+    ...langchainDocs,
   ]);
-
-  // ,
-  // ...apiDocs,
-  // ...langchainDocs,
   
   // We try to return 'source' and 'title' metadata when querying vector store and
   // Weaviate will error at query time if one of the attributes is missing from a
