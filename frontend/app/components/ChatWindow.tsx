@@ -219,7 +219,7 @@ export function ChatWindow(props: { conversationId: string }) {
         </Heading>
         {messages.length > 0 ? (
           <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
-            We appreciate feedback!
+            Deployed by Dymock B
           </Heading>
         ) : (
           <Heading
@@ -250,9 +250,6 @@ export function ChatWindow(props: { conversationId: string }) {
                 width={"240px"}
               >
                 <option value="openai_gpt_3_5_turbo">GPT-3.5-Turbo</option>
-                <option value="fireworks_mixtral">
-                  Mixtral (via Fireworks.ai)
-                </option>
               </Select>
             )}
           </div>
