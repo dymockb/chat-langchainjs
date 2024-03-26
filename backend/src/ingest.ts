@@ -87,7 +87,8 @@ async function ingestDocs() {
     chunkSize: 4000,
   });
   const docsTransformed = await textSplitter.splitDocuments([
-    ...smithDocs//,
+    ...smithDocs
+    //,
     // ...apiDocs,
     // ...langchainDocs,
   ]);
