@@ -231,8 +231,9 @@ export function ChatWindow(props: { conversationId: string }) {
           >
             Ask me anything about LangChain&apos;s{" "}
             <Link href="https://js.langchain.com/" color={"blue.200"}>
-              TypeScript documentation!  Deployed by Dymock B
+              TypeScript documentation!
             </Link>
+            {" "}Deployed by Dymock B
           </Heading>
         )}
         <div className="text-white flex flex-wrap items-center mt-4">
