@@ -218,8 +218,8 @@ export function ChatWindow(props: { conversationId: string }) {
           Dymock B&apos;s Langchain Chatbot 🦜🔗
         </Heading>
         {messages.length > 0 ? (
-          <Link href="https://www.stackfullofcode.com" color={"blue.200"}>
-           www.stackfullofcode.com
+          <Link href="https://www.stackfullofcode.com/" color={"blue.200"}>
+           test
           </Link>
         ) : (
           <Heading
