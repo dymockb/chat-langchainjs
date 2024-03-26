@@ -215,11 +215,13 @@ export function ChatWindow(props: { conversationId: string }) {
           mb={1}
           color={"white"}
         >
-          Daphne&apos;s Langchain Chatbot 🦜🔗
+          Dymock B&apos;s Langchain Chatbot 🦜🔗
         </Heading>
         {messages.length > 0 ? (
           <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
-            Deployed by Dymock B
+            <Link href="https://www.stackfullofcode.com" color={"blue.200"}>
+             www.stackfullofcode.com
+            </Link>
           </Heading>
         ) : (
           <Heading
@@ -229,7 +231,7 @@ export function ChatWindow(props: { conversationId: string }) {
             marginTop={"10px"}
             textAlign={"center"}
           >
-            Deployed by Dymock B - Ask me anything about LangChain&apos;s{" "}
+            Ask me anything about LangChain&apos;s{" "}
             <Link href="https://js.langchain.com/" color={"blue.200"}>
               TypeScript documentation!
             </Link>
