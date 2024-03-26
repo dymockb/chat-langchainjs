@@ -15,8 +15,16 @@ import { index } from "./_index.js";
  * `RecursiveUrlLoader` and return the documents.
  * @returns {Promise<Array<DocumentInterface>>}
  */
+// async function loadLangSmithDocs(): Promise<Array<DocumentInterface>> {
+//   const loader = new RecursiveUrlLoader("https://docs.smith.langchain.com/", {
+//     maxDepth: 8,
+//     timeout: 600,
+//   });
+//   return loader.load();
+// }
+
 async function loadLangSmithDocs(): Promise<Array<DocumentInterface>> {
-  const loader = new RecursiveUrlLoader("https://docs.smith.langchain.com/", {
+  const loader = new RecursiveUrlLoader("https://www.getdaphne.com/", {
     maxDepth: 8,
     timeout: 600,
   });
@@ -79,9 +87,9 @@ async function ingestDocs() {
     chunkSize: 4000,
   });
   const docsTransformed = await textSplitter.splitDocuments([
-    ...smithDocs,
-    ...apiDocs,
-    ...langchainDocs,
+    ...smithDocs//,
+    // ...apiDocs,
+    // ...langchainDocs,
   ]);
 
   // We try to return 'source' and 'title' metadata when querying vector store and
