@@ -16,7 +16,7 @@ import { index } from "./_index.js";
  * @returns {Promise<Array<DocumentInterface>>}
  */
 async function loadLangSmithDocs(): Promise<Array<DocumentInterface>> {
-  const loader = new RecursiveUrlLoader("https://www.getdaphne.com/", {
+  const loader = new RecursiveUrlLoader("https://docs.smith.langchain.com/", {
     maxDepth: 8,
     timeout: 600,
   });
@@ -83,7 +83,7 @@ async function ingestDocs() {
     ...apiDocs,
     ...langchainDocs,
   ]);
-  
+
   // We try to return 'source' and 'title' metadata when querying vector store and
   // Weaviate will error at query time if one of the attributes is missing from a
   // retrieved document.
