@@ -98,8 +98,6 @@ export function ChatWindow(props: { conversationId: string }) {
     marked.setOptions({ renderer });
 
     try {
-      console.log("test")
-      console.log(process.env.OPENAI_API_KEY)
       const sourceStepName = "FindDocs";
       let streamedResponse: Record<string, any> = {};
       const remoteChain = new RemoteRunnable({
