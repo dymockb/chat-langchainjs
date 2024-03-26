@@ -88,7 +88,7 @@ async function ingestDocs() {
   });
   const docsTransformed = await textSplitter.splitDocuments([
     ...smithDocs
-    //,
+    // ,
     // ...apiDocs,
     // ...langchainDocs,
   ]);
