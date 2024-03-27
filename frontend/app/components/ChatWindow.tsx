@@ -308,7 +308,19 @@ export function ChatWindow(props: { conversationId: string }) {
           />
         </InputRightElement>
       </InputGroup>
-
+      {messages.length === 0 ? (
+        <footer className="flex justify-center absolute bottom-8">
+          <a
+            href="https://www.stackfullofcode.com"
+            target="_blank"
+            className="text-white flex items-center"
+          >
+            <span>www.stackfullofcode.com</span>
+          </a>
+        </footer>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
