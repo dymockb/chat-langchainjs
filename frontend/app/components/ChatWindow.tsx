@@ -308,7 +308,7 @@ export function ChatWindow(props: { conversationId: string }) {
           />
         </InputRightElement>
       </InputGroup>
-      {messages.length === 0 ? (
+      {messages.length >= 0 ? (
         <footer className="flex justify-center absolute bottom-8">
           <a
             href="https://www.stackfullofcode.com"
