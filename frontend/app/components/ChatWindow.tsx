@@ -217,7 +217,7 @@ export function ChatWindow(props: { conversationId: string }) {
         >
           Dymock B&apos;s Langchain Chatbot 🦜🔗
         </Heading>
-        {messages.length > 0 ? (
+        {messages.length < 0 ? (
           <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
             www.stackfullofcode.com
           </Heading>
