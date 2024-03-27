@@ -16,7 +16,7 @@ import { index } from "./_index.js";
  * @returns {Promise<Array<DocumentInterface>>}
  */
 async function loadLangSmithDocs(): Promise<Array<DocumentInterface>> {
-  const loader = new RecursiveUrlLoader("https://www.getdaphne.com/", {
+  const loader = new RecursiveUrlLoader("https://docs.smith.langchain.com/", {
     maxDepth: 8,
     timeout: 600,
   });
